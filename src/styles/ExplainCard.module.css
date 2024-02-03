@@ -1,0 +1,14 @@
+.main {
+    width: 100%;
+    padding: 14px 20px;
+    background: #fff1cf;
+    margin: 18px 0;
+    border-radius: 8px;
+    min-height: 44px;
+    position: relative;
+    box-sizing: border-box;
+}
+
+.main p {
+    color: var(--secondary);
+}

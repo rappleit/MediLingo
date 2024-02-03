@@ -1,0 +1,222 @@
+.main {
+    margin-left: 22vw;
+    box-sizing: border-box;
+    padding: 4vh 2vw;
+    color: var(--primary);
+}
+
+.instructions {
+    background: #fff;
+    box-sizing: border-box;
+    padding: 20px;
+    border-radius: 8px;
+    color: var(--secondary);
+}
+
+.instructions h3 {
+    margin: 2px 0;
+    
+}
+
+
+
+.wrapper {
+    display: flex;
+    margin-top: 24px;
+    gap: 24px;
+    align-items: flex-start;
+
+}
+
+.filewrapper {
+    background: var(--grey);
+    padding: 12px;
+    width: 44vw;
+    min-height: 680px;
+    color: --var(--secondary);
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+}
+
+.nofilewrapper {
+    background: var(--grey);
+    padding: 12px;
+    width: 44vw;
+    min-height: 680px;
+    color: var(--secondary);
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    border: 6px dashed var(--secondary);
+}
+
+.fileControls {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: var(--secondary);
+    margin: 12px 0;
+}
+
+.fileControls button {
+    background: none;
+    border: none;
+    font-size: 32px;
+    color: var(--primary);
+    margin: 0 12px;
+    cursor: pointer;
+    position: relative;
+
+}
+
+.fileControls button:hover {
+    color: var(--primary-light);
+}
+.fileControls p {
+    margin-right: 32px;
+}
+
+.analyser {
+    flex: 1;
+    margin-bottom: 200px;
+    width: 26vw;
+
+
+}
+
+.previewCard {
+    background: #fff;
+    min-height: 240px;
+    width: 100%;
+    box-sizing: border-box;
+    padding: 14px;
+    border-radius: 8px;
+    margin-bottom: 24px;
+}
+
+.previewCard h4 {
+    margin: 0;
+    margin-bottom: 12px;
+}
+
+.previewCard img {
+    width: 100%;
+    border: 2px solid var(--primary)
+}
+
+.chatbot {
+    min-height: 450px;
+    width: 100%;
+    background: #fff;
+    box-sizing: border-box;
+    border-radius: 8px 8px 0 0;
+    position: relative;
+}
+
+.header {
+    background: var(--primary);
+    padding: 8px 0;
+    color: #fff;
+    border-radius: 8px 8px 0 0;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    top: 0;
+    left: 0;
+    z-index: 5;
+}
+
+.header h4{
+    margin: 8px 0;
+    text-align: center;
+}
+
+.header p {
+    margin: 2px 0;
+    text-align: center;
+}
+
+.footer {
+    background: var(--primary);
+    padding: 8px 0;
+    box-sizing: border-box;
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    z-index: 5;
+    min-height: 48px;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    max-height: 300px;
+
+
+}
+.container {
+    border: 1px solid rgb(203 213 225);
+    position: relative;
+    width: 100%;
+    cursor: crosshair;
+    touch-action: none;
+    height: 100%;
+}
+.selection {
+    border: 2px dashed var(--primary);
+    z-index: 999;
+    position: absolute;
+    top: 0;
+    left: 0;
+}
+
+.chatInput {
+    width: 95%;
+    min-height: 50px;
+    padding: 8px;
+    box-sizing: border-box;
+    border-radius: 4px;
+    font-size: 16px;
+    border: none;
+    margin: 12px 0;
+}
+
+.footer button {
+    width: 80%;
+    background: #fff;
+    cursor: pointer;
+    box-sizing: border-box;
+    padding: 8px 4px;
+    border: none;
+    margin: 8px 0;
+    border-radius: 4px;
+    box-shadow: rgba(0, 0, 0, 0.16) 0px 3px 6px, rgba(0, 0, 0, 0.23) 0px 3px 6px;
+}
+
+.header button:hover {
+    background: var(--primary-light);
+
+}
+
+.chatOutputWrapper {
+    margin: 8px 14px;
+    height: 280px;
+    overflow-y: auto;
+}
+
+.chatoutput {
+    background: #cfffee;
+    color: var(--secondary);
+    padding: 1px 18px;
+    font-size: 0.9rem;
+    border-radius: 3px;
+    width: 100%;
+    box-sizing: border-box;
+    margin-bottom: 84px;
+}
+
+.chatoutput p {
+    overflow-wrap: wrap;
+    word-wrap: break-word;
+}

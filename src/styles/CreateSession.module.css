@@ -1,0 +1,125 @@
+.main {
+    margin-left: 20vw;
+    box-sizing: border-box;
+    color: var(--primary);
+    background: #fff;
+    width: 100%;
+    min-height: 100vh;
+}
+
+.toolbar {
+    height: 100vh;
+    background: var(--bg);
+    position: fixed;
+    right: 0;
+    width: 20vw;
+    box-sizing: border-box;
+    box-shadow: -15px 0px 25px 0px rgba(0,0,0,0.1);
+}
+
+.header {
+    padding: 20px 16px;
+    color: #fff;
+    background: var(--primary);
+    width: 100%;
+}
+
+.header h2 {
+    font-size: 18px;
+    margin: 0;
+}
+
+.content {
+    width: 58vw;
+    color: var(--secondary);
+    box-sizing: border-box;
+    padding: 24px;
+    background: #fff;
+}
+.content h4 {
+    margin: 0px;
+    color: var(--primary)
+}
+
+.actionButton {
+    padding: 10px 18px;
+    background: var(--primary);
+    color: #fff;
+    border: 1px solid var(--secondary);
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+.actionButton:hover {
+    background: var(--primary-light);
+}
+
+.toolbarContent {
+    padding: 12px;
+    box-sizing: border-box;
+    display: flex;
+    flex-direction: column;
+    gap: 18px;
+}
+
+.toolbarContent button{
+    background: #fff;
+    border: none;
+    padding: 12px;
+    border-radius: 4px;
+    cursor: pointer;
+    box-shadow: rgba(0, 0, 0, 0.16) 0px 3px 6px, rgba(0, 0, 0, 0.03) 0px 3px 6px;
+    color: var(--secondary);
+
+}
+
+.toolbarContent button:hover {
+    background: var(--primary-light);
+}
+
+.toolCard {
+    background: #fff;
+    box-sizing: border-box;
+    padding: 14px 12px;
+    border-radius: 4px;
+    box-shadow: rgba(0, 0, 0, 0.16) 0px 3px 6px, rgba(0, 0, 0, 0.03) 0px 3px 6px;
+    color: var(--secondary);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.toolCard h4 {
+    margin: 4px 0;
+}
+
+.toolCard p {
+    text-align: center;
+    margin: 2px 0;
+    font-size: 14px;
+}
+
+.explainInput {
+    width: 100%;
+    min-height: 64px;
+    padding: 10px;
+    box-sizing: border-box;
+    font-family: "Nunito Sans";
+    margin: 8px 0;
+}
+
+.toolCard button {
+    background: var(--primary);
+    padding: 8px 0;
+    width: 100%;
+    box-shadow: none;
+    color: #fff;
+}
+
+.selectModel {
+    width: 100%;
+    padding: 8px;
+    margin: 8px 0;
+}
+
+
