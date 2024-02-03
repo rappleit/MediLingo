@@ -48,11 +48,7 @@ const CreateSession = () => {
     }
 
     const [models, setModels] = useState([])
-    useEffect(() => {
-        
-      
-    }, [])
-
+ 
     
     return (
         <div className={styles.main}>
@@ -94,7 +90,7 @@ const CreateSession = () => {
                     : <div><p>Start by adding a note or something from the toolbox!</p>
                         <button className={styles.actionButton} onClick={() => createNote()}>Add Note</button></div>}
 
-
+                        <iframe src="https://saanatomy.com/Embeds/HumanEcorshe/index.html" width="100%" height="550"></iframe>
             </div>
         </div>
     );
