@@ -310,16 +310,12 @@ const UploadReport = () => {
                 }}
               />
             )}
-            <Document
-              file={pdfUrl}
-              onLoadSuccess={onDocumentLoadSuccess}
-            >
-              <Page pageNumber={pageNum} renderTextLayer={false} height={680} width={window.screen.availWidth * 0.44} renderAnnotationLayer={false}></Page>
-            </Document>
+            <div>
+              <iframe title="PDF Viewer" src={pdfUrl} width="100%" height="500px"></iframe>
+            </div>
           </div>
 
           <div className={styles.fileControls}>
-            <p>Page {pageNum} of {numPages}</p>
             <button onClick={() => previousPage()}><FaChevronCircleLeft /></button>
             <button onClick={() => nextPage()}><FaChevronCircleRight /></button>
           </div>
