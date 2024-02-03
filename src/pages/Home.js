@@ -34,23 +34,7 @@ const Home = () => {
                         </div>
                     </Link>
                 </div>
-                <div className={styles.row}>
-                    <Link to="/sessions" className={styles.cardLink}>
-
-                        <div className={styles.card}>
-                            <FaCommentMedical className={styles.icon} />
-                            <h3>View My Sessions</h3>
-                        </div>
-                    </Link>
-                    <Link to="/reports" className={styles.cardLink}>
-                        <div className={styles.card}>
-                            <FaFileInvoice className={styles.icon} />
-                            <h3 >View My Reports</h3>
-                        </div>
-                    </Link>
-
-
-                </div>
+                
             </div>
         </div>
     );

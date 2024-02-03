@@ -4,6 +4,7 @@ import NoteCard from "../components/NoteCard"
 import TextareaAutosize from 'react-textarea-autosize';
 import axios from "axios"
 import ExplainCard from "../components/ExplainCard";
+import DiagramCard from "../components/DiagramCard";
 
 const CreateSession = () => {
     const [noteArray, setNoteArray] = useState([])
@@ -47,8 +48,24 @@ const CreateSession = () => {
         }
     }
 
-    const [models, setModels] = useState([])
- 
+    let models = ["Brain", "Stomach", "Lungs", "Heart", "Male Digestive System", "Female Digesgtive System", "Type 1 Diabetes", "Type 2 Diabetes"]
+    const [selectedModel, setSelectedModel] = useState("Brain")
+    
+    const createDiagram = () => {
+        setNoteArray([...noteArray, <DiagramCard modelType={selectedModel} key={noteArray.length} />]);
+
+    }
+
+    const currentDate = new Date();
+
+    const day = currentDate.getDate();
+    const month = currentDate.getMonth() + 1; // Note: Month starts from 0
+    const year = currentDate.getFullYear();
+
+    const formattedDay = day < 10 ? '0' + day : day;
+    const formattedMonth = month < 10 ? '0' + month : month;
+
+    const formattedDate = `${formattedDay}/${formattedMonth}/${year}`;
     
     return (
         <div className={styles.main}>
@@ -72,25 +89,27 @@ const CreateSession = () => {
                     <div className={styles.toolCard}>
                         <h4>Create Visual Diagram</h4>
                         <p>What diagram would you like to add?</p>
-                        <select className={styles.selectModel}>
-                            <option value="brain">Brain</option>
+                        <select className={styles.selectModel} value={selectedModel} onChange={(e) => setSelectedModel(e.target.value)}>
+                            {models.map((m, i) => (
+                                <option value={m} key={i}>{m}</option>
+
+                            ))}
                         </select>
-                        <button>Create</button>
+                        <button onClick={() => createDiagram()}>Create</button>
                     </div>
 
                 </div>
             </div>
             <div className={styles.content}>
                 <h4>Create new session</h4>
-                <h1>3/2/2024 Session</h1>
+                <h1>{formattedDate} Session</h1>
                 {(noteArray.length > 0) ?
                     noteArray.map((element) => (
                         element
                     ))
                     : <div><p>Start by adding a note or something from the toolbox!</p>
                         <button className={styles.actionButton} onClick={() => createNote()}>Add Note</button></div>}
-
-                        <iframe className={styles.viewer} id="embedded-human"  allowFullScreen="true" loading="lazy" src="https://human.biodigital.com/viewer/?id=5SVl&ui-anatomy-descriptions=true&ui-anatomy-pronunciations=true&ui-anatomy-labels=true&ui-audio=true&ui-chapter-list=false&ui-fullscreen=true&ui-help=true&ui-info=true&ui-label-list=true&ui-layers=true&ui-loader=circle&ui-media-controls=full&ui-menu=true&ui-nav=true&ui-search=true&ui-tools=true&ui-tutorial=false&ui-undo=true&ui-whiteboard=true&initial.none=true&disable-scroll=false&dk=c1763b3660adf0fb4f7ffbbc5030d0cf9d17275a&paid=o_121d18fd"></iframe>            </div>
+                        </div>
         </div>
     );
 }

@@ -8,6 +8,10 @@ import TextareaAutosize from 'react-textarea-autosize';
 import axios from "axios";
 import FormData from 'form-data';
 import Report1 from "../assets/sample_reports/samplereport1.pdf"
+import Report2 from "../assets/sample_reports/samplereport2.pdf"
+
+
+
 import pdfWorker from 'pdfjs-dist/build/pdf.worker.entry';
 
 pdfjs.GlobalWorkerOptions.workerSrc = pdfWorker;
@@ -278,9 +282,7 @@ const UploadReport = () => {
           <h4>Choose a sample report:</h4>
           <div className={styles.selectionWrapper}>
             <button onClick={() => setFile(Report1)}>Report 1</button>
-            <button>Report 2</button>
-            <button>Report 3</button>
-            <button>Report 4</button>
+            <button onClick={() => setFile(Report2)}>Report 2</button>
           </div>
         </div>
         <div className={styles.wrapper}>
