@@ -7,7 +7,7 @@ import html2canvas from "html2canvas";
 import TextareaAutosize from 'react-textarea-autosize';
 import axios from "axios";
 import FormData from 'form-data';
-
+import Report1 from "../assets/sample_reports/samplereport1.pdf"
 
 pdfjs.GlobalWorkerOptions.workerSrc = new URL(
   'pdfjs-dist/build/pdf.worker.min.js',
@@ -171,18 +171,6 @@ export const mergeRefs = refs => {
   }
 }
 
-const [pdfUrl, setPdfUrl] = useState('');
-
-const handleUpload = () => {
-  if (file) {
-    const reader = new FileReader();
-    reader.onloadend = () => {
-      setPdfUrl(reader.result);
-    };
-    reader.readAsDataURL(pdfFile);
-  }
-};
-
 const UploadReport = () => {
   const containerRef = useRef()
   const [clickToSelectRef, dx, dy, startX, startY, selection] = useClickToSelect()
@@ -288,14 +276,13 @@ const UploadReport = () => {
           <li>Use our chatbot on the right to ask your questions.</li>
           <li>Repeat step 2 if you would like to ask another question.</li>
         </ol>
-        <form>
-          <h4>Upload your report here:</h4>
-          <input type="file"
-            className={styles.form}
-            accept="application/pdf"
-            required
-            onChange={(e) => setFile(e.target.files[0])} />
-        </form>
+          <h4>Choose a sample report:</h4>
+          <div className={styles.selectionWrapper}>
+            <button onClick={() => setFile(Report1)}>Report 1</button>
+            <button>Report 2</button>
+            <button>Report 3</button>
+            <button>Report 4</button>
+          </div>
       </div>
       <div className={styles.wrapper}>
         {(file) ? <div className={styles.filewrapper}>
@@ -310,12 +297,16 @@ const UploadReport = () => {
                 }}
               />
             )}
-            <div>
-              <iframe title="PDF Viewer" src={pdfUrl} width="100%" height="500px"></iframe>
-            </div>
+            <Document
+              file={file}
+              onLoadSuccess={onDocumentLoadSuccess}
+            >
+              <Page pageNumber={pageNum} renderTextLayer={false} height={680} width={window.screen.availWidth * 0.44} renderAnnotationLayer={false}></Page>
+            </Document>
           </div>
 
           <div className={styles.fileControls}>
+            <p>Page {pageNum} of {numPages}</p>
             <button onClick={() => previousPage()}><FaChevronCircleLeft /></button>
             <button onClick={() => nextPage()}><FaChevronCircleRight /></button>
           </div>
