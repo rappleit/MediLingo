@@ -8,11 +8,9 @@ import TextareaAutosize from 'react-textarea-autosize';
 import axios from "axios";
 import FormData from 'form-data';
 import Report1 from "../assets/sample_reports/samplereport1.pdf"
+import pdfWorker from 'pdfjs-dist/build/pdf.worker.entry';
 
-pdfjs.GlobalWorkerOptions.workerSrc = new URL(
-  'pdfjs-dist/build/pdf.worker.min.js',
-  import.meta.url,
-).toString();
+pdfjs.GlobalWorkerOptions.workerSrc = pdfWorker;
 export const clamp = (val, min, max) => Math.max(min, Math.min(max, val))
 export let Selection
 
