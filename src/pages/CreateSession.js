@@ -90,8 +90,7 @@ const CreateSession = () => {
                     : <div><p>Start by adding a note or something from the toolbox!</p>
                         <button className={styles.actionButton} onClick={() => createNote()}>Add Note</button></div>}
 
-                        <iframe src="https://saanatomy.com/Embeds/HumanEcorshe/index.html" width="100%" height="550"></iframe>
-            </div>
+                        <iframe className={styles.viewer} id="embedded-human"  allowFullScreen="true" loading="lazy" src="https://human.biodigital.com/viewer/?id=5SVl&ui-anatomy-descriptions=true&ui-anatomy-pronunciations=true&ui-anatomy-labels=true&ui-audio=true&ui-chapter-list=false&ui-fullscreen=true&ui-help=true&ui-info=true&ui-label-list=true&ui-layers=true&ui-loader=circle&ui-media-controls=full&ui-menu=true&ui-nav=true&ui-search=true&ui-tools=true&ui-tutorial=false&ui-undo=true&ui-whiteboard=true&initial.none=true&disable-scroll=false&dk=c1763b3660adf0fb4f7ffbbc5030d0cf9d17275a&paid=o_121d18fd"></iframe>            </div>
         </div>
     );
 }
