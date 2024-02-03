@@ -171,6 +171,18 @@ export const mergeRefs = refs => {
   }
 }
 
+const [pdfUrl, setPdfUrl] = useState('');
+
+const handleUpload = () => {
+  if (file) {
+    const reader = new FileReader();
+    reader.onloadend = () => {
+      setPdfUrl(reader.result);
+    };
+    reader.readAsDataURL(pdfFile);
+  }
+};
+
 const UploadReport = () => {
   const containerRef = useRef()
   const [clickToSelectRef, dx, dy, startX, startY, selection] = useClickToSelect()
@@ -299,7 +311,7 @@ const UploadReport = () => {
               />
             )}
             <Document
-              file={file}
+              file={pdfUrl}
               onLoadSuccess={onDocumentLoadSuccess}
             >
               <Page pageNumber={pageNum} renderTextLayer={false} height={680} width={window.screen.availWidth * 0.44} renderAnnotationLayer={false}></Page>
