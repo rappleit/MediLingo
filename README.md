@@ -1,6 +1,6 @@
 # MediLingo
 
-
+![MediLingo](https://github.com/rappleit/MediLingo/assets/80181684/4da32eae-6010-4d1d-b9ca-b023a997968e)
 
 ## Introduction
 Welcome to MediLingo, an all-in-one medical app designed to bridge the gap between complex medical terminology and patient-friendly language. Our solution aims to empower patients by providing simplified explanations, enabling them to better comprehend their health status and treatment options.
