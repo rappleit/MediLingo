@@ -1,70 +1,25 @@
-# Getting Started with Create React App
+# MediLingo
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
-## Available Scripts
 
-In the project directory, you can run:
+## Introduction
+Welcome to MediLingo, an all-in-one medical app designed to bridge the gap between complex medical terminology and patient-friendly language. Our solution aims to empower patients by providing simplified explanations, enabling them to better comprehend their health status and treatment options.
 
-### `npm start`
+> MediLingo is an entry for the NUS HealthHack 2024 hackathon.
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+### Try it out!
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
+**Functional Web App:** https://medi-lingo.vercel.app/
 
-### `npm test`
+**Mobile App Prototype:** http://bit.ly/4856LXn
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+**Slides:** https://www.canva.com/design/DAF6h2cG_G0/nx14JXF0v4G322f9xCHhcQ/edit?utm_content=DAF6h2cG_G0&utm_campaign=designshare&utm_medium=link2&utm_source=sharebutton
 
-### `npm run build`
+## Features
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+📝 **Assisted Clinical Notes Builder:** Add notes, generate explanations with AI and create 3D interactive anatomy diagrams on the fly! Help patients understand complex medical concepts without wasting consultation time.
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+🔍 **Medical Report Analyser:** Patients can upload their medical reports, drag and select the specific section they have questions about, and inquire with an AI to better understand their reports.
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
 
-### `npm run eject`
 
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
-
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
-
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
-
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
-
-## Learn More
-
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
-
-To learn React, check out the [React documentation](https://reactjs.org/).
-
-### Code Splitting
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
-
-### Analyzing the Bundle Size
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
-
-### Making a Progressive Web App
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
-
-### Advanced Configuration
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
-
-### Deployment
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `npm run build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
