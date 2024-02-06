@@ -52,7 +52,7 @@ An accessible, cost-effective, and smart digital solution, MediLingo aims to emp
 
 ## About Us
 
-We are a team of undegraduates - 3 from Singapore University of Technology and Design (SUTD) and 1 from Nanyang Technological University (NTU), participating in HealthHack 2024. 
+We are a team of undergraduates - 3 from Singapore University of Technology and Design (SUTD) and 1 from Nanyang Technological University (NTU), participating in HealthHack 2024. 
 - [Rachel](https://github.com/rappleit): SUTD Computer Science and Design
 - [Jing Kai](https://github.com/jingkai27): SUTD Computer Science and Design
 - [Hun Chong](https://github.com/hunchongtan): SUTD Design and Artificial Intelligence
