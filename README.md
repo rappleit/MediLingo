@@ -1,4 +1,4 @@
-<img src="https://github.com/rappleit/MediLingo/assets/87000020/0058415c-1a68-48e7-b3e4-f3f380a65a78">
+[<img src="https://github.com/rappleit/MediLingo/assets/87000020/0058415c-1a68-48e7-b3e4-f3f380a65a78">](https://medi-lingo.vercel.app/)
 
 <h4 align="center">
   <a href="https://youtu.be/LBIPTbmAqEM">Youtube</a>
@@ -27,7 +27,7 @@ An accessible, cost-effective, and smart digital solution, MediLingo aims to emp
 |----------|-------------|---------|
 | 📝 **Assisted Clinical Notes Builder** | Streamline patients' understanding of intricate medical concepts by allowing doctors to generate real-time annotations and comprehensive yet simplified explanations during consultations. | <img src="https://github.com/rappleit/MediLingo/assets/87000020/66463bc8-e4be-4cd9-893a-ec020a9a3cec" width=450> |
 | 🧠 **Cutting-edge 3D Visualisation** | Better grasp and visualise patients' medical conditions with our advanced 3D interactive anatomy diagrams. | <img src="https://github.com/rappleit/MediLingo/assets/87000020/c1d26f89-eb56-4255-81ec-fe761a967371" width=450> |
-| 🔍 **Select-to-explain Report Analyser** | Patients can upload their medical reports, select specific sections of interest, and simply ask-AI to inquire about their reports. | <img src="https://github.com/rappleit/MediLingo/assets/87000020/53538799-1cc3-44ed-baf0-b1f8402721ab" width=450> |
+| 🔍 **Select-to-explain Report Analyser** | Patients can upload their medical reports, select specific sections of interest, and simply ask the AI to inquire about their reports. | <img src="https://github.com/rappleit/MediLingo/assets/87000020/53538799-1cc3-44ed-baf0-b1f8402721ab" width=450> |
 | 🏛️ **Future App Integration with HealthHub** | Seamlessly integrate with government online health services such as HealthHub, enhancing the efficiency of promoting health literacy among Singaporeans. | <img src="https://github.com/rappleit/MediLingo/assets/87000020/39fc9cf3-5c3e-4446-b2d4-83c1aa74159a" width=450> |
 
 ## Technologies Used
@@ -55,7 +55,7 @@ Coming together as a a strong team of 4, we bring different and unique skillsets
 - [Rachel Lim](https://github.com/rappleit): SUTD Computer Science and Design
 - [Tan Jing Kai](https://github.com/jingkai27): SUTD Computer Science and Design
 - [Tan Hun Chong](https://github.com/hunchongtan): SUTD Design and Artificial Intelligence
-- [Yeo Jia Ying](): NTU Medicine
+- [Yeo Jia Ying](): NTU LKC School of Medicine
   
 <img width="1440" alt="Screenshot 2024-02-06 at 5 54 51 PM" src="https://github.com/rappleit/MediLingo/assets/103237805/3fb24f00-1deb-4588-a16f-dfb13b376f28">
 
