@@ -4,8 +4,6 @@
   <a href="https://youtu.be/LBIPTbmAqEM">Youtube</a>
   <span> · </span>
   <a href="https://www.canva.com/design/DAF6h2cG_G0/nx14JXF0v4G322f9xCHhcQ/edit?utm_content=DAF6h2cG_G0&utm_campaign=designshare&utm_medium=link2&utm_source=sharebutton">Pitch Deck</a>
-  <span> · </span>
-  <a href="https:/github.com/rappleit/MediLingo/issues">Report a bug</a>
 </h4>
 
 ---
