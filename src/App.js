@@ -3,9 +3,7 @@ import './App.css';
 import Home from './pages/Home';
 import { Sidebar, Menu, MenuItem, sidebarClasses } from 'react-pro-sidebar';
 import { FaHome, FaCommentMedical, FaFileInvoice } from "react-icons/fa";
-import { useLocation } from 'react-router-dom'
-import Sessions from './pages/Sessions';
-import Reports from './pages/Reports';
+import { useLocation } from 'react-router-dom';
 import CreateSession from './pages/CreateSession';
 import UploadReport from './pages/UploadReport';
 import logo_white from "./assets/logo_white.png"
@@ -51,12 +49,6 @@ function App() {
         <Route
           path="/"
           element={<Home />} />
-        <Route
-          path="/sessions"
-          element={<Sessions />} />
-        <Route
-          path="/reports"
-          element={<Reports />} />
         <Route
           path="/new_session"
           element={<CreateSession />} />

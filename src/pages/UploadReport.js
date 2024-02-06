@@ -266,88 +266,89 @@ const UploadReport = () => {
     }
   }
 
- 
 
-    return (
-      <div className={styles.main}>
-        <h1>Analyse A Report</h1>
-        <div className={styles.instructions}>
-          <h3>Instructions:</h3>
-          <ol>
-            <li>Upload your medical report as a PDF document.</li>
-            <li>Select the portion of the document you have questions about by clicking and dragging.</li>
-            <li>Use our chatbot on the right to ask your questions.</li>
-            <li>Repeat step 2 if you would like to ask another question.</li>
-          </ol>
-          <h4>Choose a sample report:</h4>
-          <div className={styles.selectionWrapper}>
-            <button onClick={() => setFile(Report1)}>Report 1</button>
-            <button onClick={() => setFile(Report2)}>Report 2</button>
-          </div>
+
+  return (
+    <div className={styles.main}>
+      <h1>Analyse A Report</h1>
+      <div className={styles.instructions}>
+        <h3>Instructions:</h3>
+        <ol>
+          <li>Upload your medical report as a PDF document.</li>
+          <li>Select the portion of the document you have questions about by clicking and dragging.</li>
+          <li>Use our chatbot on the right to ask your questions.</li>
+          <li>Repeat step 2 if you would like to ask another question.</li>
+        </ol>
+        <h4>Upload or choose a report:</h4>
+        <div className={styles.selectionWrapper}>
+          <input type="file" accept=".pdf" onChange={(e) => setFile(e.target.files[0])} />
+          <button onClick={() => setFile(Report1)}>Report 1</button>
+          <button onClick={() => setFile(Report2)}>Report 2</button>
         </div>
-        <div className={styles.wrapper}>
-          {(file) ? <div className={styles.filewrapper}>
-            <div className={styles.container} ref={containerMergedRef}>
-              {selection === Selection.Dragging && (
-                <div
-                  className={styles.selection}
-                  style={{
-                    transform: `translate(${startX}px, ${startY}px)`,
-                    width: `${dx}px`,
-                    height: `${dy}px`,
-                  }}
-                />
-              )}
-              <Document
-                file={file}
-                onLoadSuccess={onDocumentLoadSuccess}
-              >
-                <Page pageNumber={pageNum} renderTextLayer={false} height={680} width={window.screen.availWidth * 0.44} renderAnnotationLayer={false}></Page>
-              </Document>
-            </div>
+      </div>
+      <div className={styles.wrapper}>
+        {(file) ? <div className={styles.filewrapper}>
+          <div className={styles.container} ref={containerMergedRef}>
+            {selection === Selection.Dragging && (
+              <div
+                className={styles.selection}
+                style={{
+                  transform: `translate(${startX}px, ${startY}px)`,
+                  width: `${dx}px`,
+                  height: `${dy}px`,
+                }}
+              />
+            )}
+            <Document
+              file={file}
+              onLoadSuccess={onDocumentLoadSuccess}
+            >
+              <Page pageNumber={pageNum} renderTextLayer={false} height={680} width={window.screen.availWidth * 0.44} renderAnnotationLayer={false}></Page>
+            </Document>
+          </div>
 
-            <div className={styles.fileControls}>
-              <p>Page {pageNum} of {numPages}</p>
-              <button onClick={() => previousPage()}><FaChevronCircleLeft /></button>
-              <button onClick={() => nextPage()}><FaChevronCircleRight /></button>
+          <div className={styles.fileControls}>
+            <p>Page {pageNum} of {numPages}</p>
+            <button onClick={() => previousPage()}><FaChevronCircleLeft /></button>
+            <button onClick={() => nextPage()}><FaChevronCircleRight /></button>
+          </div>
+        </div> :
+          <div className={styles.nofilewrapper}>
+            <FaFileUpload style={{ "fontSize": "54px", "marginTop": "36px" }} />
+            <h2>Please upload your medical report in PDF</h2>
+          </div>
+        }
+        <div className={styles.analyser}>
+          <div className={styles.previewCard}>
+            <h4>Drag over the report to select the area you would like to ask about.</h4>
+            {(askImg) ? <img src={askImg} alt="" /> : <></>}
+          </div>
+          <div className={styles.chatbot}>
+            <div className={styles.header}>
+              <h4>Ask Dr. Octo</h4>
+              <p>About the selected area of your report</p>
+
             </div>
-          </div> :
-            <div className={styles.nofilewrapper}>
-              <FaFileUpload style={{ "fontSize": "54px", "marginTop": "36px" }} />
-              <h2>Please upload your medical report in PDF</h2>
+            <div className={styles.footer}>
+              <TextareaAutosize
+                className={styles.chatInput}
+                value={question}
+                onChange={(e) => setQuestion(e.target.value)}
+                placeholder="Type your question" />
+              <button onClick={(e) => handleAsk(e)}>Ask Away!</button>
             </div>
-          }
-          <div className={styles.analyser}>
-            <div className={styles.previewCard}>
-              <h4>Drag over the report to select the area you would like to ask about.</h4>
-              {(askImg) ? <img src={askImg} alt="" /> : <></>}
-            </div>
-            <div className={styles.chatbot}>
-              <div className={styles.header}>
-                <h4>Ask Dr. Octo</h4>
-                <p>About the selected area of your report</p>
+            <div className={styles.chatOutputWrapper}>
+              <div className={styles.chatoutput}>
+                <p>{answer}</p>
 
               </div>
-              <div className={styles.footer}>
-                <TextareaAutosize
-                  className={styles.chatInput}
-                  value={question}
-                  onChange={(e) => setQuestion(e.target.value)}
-                  placeholder="Type your question" />
-                <button onClick={(e) => handleAsk(e)}>Ask Away!</button>
-              </div>
-              <div className={styles.chatOutputWrapper}>
-                <div className={styles.chatoutput}>
-                  <p>{answer}</p>
-
-                </div>
-              </div>
-
             </div>
+
           </div>
         </div>
       </div>
-    );
-  }
+    </div>
+  );
+}
 
 export default UploadReport;
