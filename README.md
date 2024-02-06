@@ -51,11 +51,12 @@ An accessible, cost-effective, and smart digital solution, MediLingo aims to emp
 </div>
 
 ## About Us
-
-We are a team of undergraduates - 3 from Singapore University of Technology and Design (SUTD) and 1 from Nanyang Technological University (NTU), participating in HealthHack 2024. 
-- [Rachel](https://github.com/rappleit): SUTD Computer Science and Design
-- [Jing Kai](https://github.com/jingkai27): SUTD Computer Science and Design
-- [Hun Chong](https://github.com/hunchongtan): SUTD Design and Artificial Intelligence
-- [Jia Ying](): NTU Medicine
+Coming together as a a strong team of 4, we bring different and unique skillsets to the team, contributing to our shared vision of bridging technology with healthcare solutions. Our team members are proficient in various skillsets, from full-stack web development, AI, 3D modelling and more. We look forward to what we can achieve as a team and bring our technology to greater heights.
+- [Rachel Lim](https://github.com/rappleit): SUTD Computer Science and Design
+- [Tan Jing Kai](https://github.com/jingkai27): SUTD Computer Science and Design
+- [Tan Hun Chong](https://github.com/hunchongtan): SUTD Design and Artificial Intelligence
+- [Yeo Jia Ying](): NTU Medicine
+  
+<img width="1440" alt="Screenshot 2024-02-06 at 5 54 51 PM" src="https://github.com/rappleit/MediLingo/assets/103237805/3fb24f00-1deb-4588-a16f-dfb13b376f28">
 
 Feel free to contact us [here](mailto:rachel.limre03@gmail.com).
