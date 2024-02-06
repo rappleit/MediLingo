@@ -30,6 +30,7 @@ An accessible, cost-effective, and smart digital solution, MediLingo aims to emp
 | 📝 **Assisted Clinical Notes Builder** | Streamline patients' understanding of intricate medical concepts by allowing doctors to generate real-time annotations and comprehensive yet simplified explanations during consultations. | <img src="https://github.com/rappleit/MediLingo/assets/87000020/66463bc8-e4be-4cd9-893a-ec020a9a3cec" width=450> |
 | 🧠 **Cutting-edge 3D Visualisation** | Better grasp and visualise patients' medical conditions with our advanced 3D interactive anatomy diagrams. | <img src="https://github.com/rappleit/MediLingo/assets/87000020/c1d26f89-eb56-4255-81ec-fe761a967371" width=450> |
 | 🔍 **Select-to-explain Report Analyser** | Patients can upload their medical reports, select specific sections of interest, and simply ask-AI to inquire about their reports. | <img src="https://github.com/rappleit/MediLingo/assets/87000020/53538799-1cc3-44ed-baf0-b1f8402721ab" width=450> |
+| 🏛️ **Future App Integration with HealthHub** | Seamlessly integrate with government online health services such as HealthHub, enhancing the efficiency of promoting health literacy among Singaporeans. | <img src="https://github.com/rappleit/MediLingo/assets/87000020/39fc9cf3-5c3e-4446-b2d4-83c1aa74159a" width=450> |
 
 ## Technologies Used
 
