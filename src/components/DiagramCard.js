@@ -31,6 +31,31 @@ const DiagramCard = ({
             {(modelType === "Type 2 Diabetes") ? <iframe className={styles.viewer} id="embedded-human" allowFullScreen="true" loading="lazy" src="https://human.biodigital.com/viewer/?id=5SVs&ui-anatomy-descriptions=true&ui-anatomy-pronunciations=true&ui-anatomy-labels=true&ui-audio=true&ui-chapter-list=false&ui-fullscreen=true&ui-help=true&ui-info=true&ui-label-list=true&ui-layers=true&ui-loader=circle&ui-media-controls=full&ui-menu=true&ui-nav=true&ui-search=true&ui-tools=true&ui-tutorial=false&ui-undo=true&ui-whiteboard=true&initial.none=true&disable-scroll=false&uaid=Ls9WD&paid=o_121d18fd"></iframe>
                 : <></>}
 
+            {(modelType === "Head and Neck") ? <iframe className={styles.viewer} id="embedded-human" allowFullScreen="true" loading="lazy" src="https://human.biodigital.com/viewer/?id=5ShR&ui-anatomy-descriptions=true&ui-anatomy-pronunciations=true&ui-anatomy-labels=true&ui-audio=true&ui-chapter-list=false&ui-fullscreen=true&ui-help=true&ui-info=true&ui-label-list=true&ui-layers=true&ui-loader=circle&ui-media-controls=full&ui-menu=true&ui-nav=true&ui-search=true&ui-tools=true&ui-tutorial=false&ui-undo=true&ui-whiteboard=true&initial.none=true&disable-scroll=false&dk=c1763b3660adf0fb4f7ffbbc5030d0cf9d17275a&paid=o_121d18fd"></iframe>
+                : <></>}
+
+            {(modelType === "Upper Limb") ? <iframe className={styles.viewer} id="embedded-human" allowFullScreen="true" loading="lazy" src="https://human.biodigital.com/viewer/?id=5ShS&ui-anatomy-descriptions=true&ui-anatomy-pronunciations=true&ui-anatomy-labels=true&ui-audio=true&ui-chapter-list=false&ui-fullscreen=true&ui-help=true&ui-info=true&ui-label-list=true&ui-layers=true&ui-loader=circle&ui-media-controls=full&ui-menu=true&ui-nav=true&ui-search=true&ui-tools=true&ui-tutorial=false&ui-undo=true&ui-whiteboard=true&initial.none=true&disable-scroll=false&dk=c1763b3660adf0fb4f7ffbbc5030d0cf9d17275a&paid=o_121d18fd"></iframe>
+                : <></>}
+
+            {(modelType === "Lower Limb") ? <iframe className={styles.viewer} id="embedded-human" allowFullScreen="true" loading="lazy" src="https://human.biodigital.com/viewer/?id=5ShT&ui-anatomy-descriptions=true&ui-anatomy-pronunciations=true&ui-anatomy-labels=true&ui-audio=true&ui-chapter-list=false&ui-fullscreen=true&ui-help=true&ui-info=true&ui-label-list=true&ui-layers=true&ui-loader=circle&ui-media-controls=full&ui-menu=true&ui-nav=true&ui-search=true&ui-tools=true&ui-tutorial=false&ui-undo=true&ui-whiteboard=true&initial.none=true&disable-scroll=false&dk=c1763b3660adf0fb4f7ffbbc5030d0cf9d17275a&paid=o_121d18fd"></iframe>
+                : <></>}
+
+            {(modelType === "Female Cardiovascular System") ? <iframe className={styles.viewer} id="embedded-human" allowFullScreen="true" loading="lazy" src="https://human.biodigital.com/viewer/?id=5ShU&ui-anatomy-descriptions=true&ui-anatomy-pronunciations=true&ui-anatomy-labels=true&ui-audio=true&ui-chapter-list=false&ui-fullscreen=true&ui-help=true&ui-info=true&ui-label-list=true&ui-layers=true&ui-loader=circle&ui-media-controls=full&ui-menu=true&ui-nav=true&ui-search=true&ui-tools=true&ui-tutorial=false&ui-undo=true&ui-whiteboard=true&initial.none=true&disable-scroll=false&dk=c1763b3660adf0fb4f7ffbbc5030d0cf9d17275a&paid=o_121d18fd"></iframe>
+                : <></>}
+
+            {(modelType === "Male Cardiovascular System") ? <iframe className={styles.viewer} id="embedded-human" allowFullScreen="true" loading="lazy" src="https://human.biodigital.com/viewer/?id=5ShV&ui-anatomy-descriptions=true&ui-anatomy-pronunciations=true&ui-anatomy-labels=true&ui-audio=true&ui-chapter-list=false&ui-fullscreen=true&ui-help=true&ui-info=true&ui-label-list=true&ui-layers=true&ui-loader=circle&ui-media-controls=full&ui-menu=true&ui-nav=true&ui-search=true&ui-tools=true&ui-tutorial=false&ui-undo=true&ui-whiteboard=true&initial.none=true&disable-scroll=false&dk=c1763b3660adf0fb4f7ffbbc5030d0cf9d17275a&paid=o_121d18fd"></iframe>
+                : <></>}
+
+            {(modelType === "Bone Tissue") ? <iframe className={styles.viewer} id="embedded-human" allowFullScreen="true" loading="lazy" src="https://human.biodigital.com/viewer/?id=5ShX&ui-anatomy-descriptions=true&ui-anatomy-pronunciations=true&ui-anatomy-labels=true&ui-audio=true&ui-chapter-list=false&ui-fullscreen=true&ui-help=true&ui-info=true&ui-label-list=true&ui-layers=true&ui-loader=circle&ui-media-controls=full&ui-menu=true&ui-nav=true&ui-search=true&ui-tools=true&ui-tutorial=false&ui-undo=true&ui-whiteboard=true&initial.none=true&disable-scroll=false&dk=c1763b3660adf0fb4f7ffbbc5030d0cf9d17275a&paid=o_121d18fd"></iframe>
+                : <></>}
+
+            {(modelType === "Skin Tissue") ? <iframe className={styles.viewer} id="embedded-human" allowFullScreen="true" loading="lazy" src="https://human.biodigital.com/viewer/?id=5ShZ&ui-anatomy-descriptions=true&ui-anatomy-pronunciations=true&ui-anatomy-labels=true&ui-audio=true&ui-chapter-list=false&ui-fullscreen=true&ui-help=true&ui-info=true&ui-label-list=true&ui-layers=true&ui-loader=circle&ui-media-controls=full&ui-menu=true&ui-nav=true&ui-search=true&ui-tools=true&ui-tutorial=false&ui-undo=true&ui-whiteboard=true&initial.none=true&disable-scroll=false&dk=c1763b3660adf0fb4f7ffbbc5030d0cf9d17275a&paid=o_121d18fd"></iframe>
+                : <></>}
+
+            {(modelType === "Cell") ? <iframe id="embedded-human" className={styles.viewer} allowFullScreen="true" loading="lazy" src="https://human.biodigital.com/viewer/?id=5ShY&ui-anatomy-descriptions=true&ui-anatomy-pronunciations=true&ui-anatomy-labels=true&ui-audio=true&ui-chapter-list=false&ui-fullscreen=true&ui-help=true&ui-info=true&ui-label-list=true&ui-layers=true&ui-loader=circle&ui-media-controls=full&ui-menu=true&ui-nav=true&ui-search=true&ui-tools=true&ui-tutorial=false&ui-undo=true&ui-whiteboard=true&initial.none=true&disable-scroll=false&dk=c1763b3660adf0fb4f7ffbbc5030d0cf9d17275a&paid=o_121d18fd"></iframe>
+                : <></>}
+
+
         </div>
     );
 }

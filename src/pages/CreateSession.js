@@ -48,7 +48,7 @@ const CreateSession = () => {
         }
     }
 
-    let models = ["Brain", "Stomach", "Lungs", "Heart", "Male Digestive System", "Female Digesgtive System", "Type 1 Diabetes", "Type 2 Diabetes"]
+    let models = ["Brain", "Stomach", "Lungs", "Heart", "Male Digestive System", "Female Digesgtive System", "Type 1 Diabetes", "Type 2 Diabetes", "Head and Neck", "Upper Limb", "Lower Limb", "Female Cardiovascular System", "Male Cardiovascular System", "Bone Tissue", "Skin Tissue", "Cell"]
     const [selectedModel, setSelectedModel] = useState("Brain")
     
     const createDiagram = () => {
@@ -59,7 +59,7 @@ const CreateSession = () => {
     const currentDate = new Date();
 
     const day = currentDate.getDate();
-    const month = currentDate.getMonth() + 1; // Note: Month starts from 0
+    const month = currentDate.getMonth() + 1;
     const year = currentDate.getFullYear();
 
     const formattedDay = day < 10 ? '0' + day : day;
