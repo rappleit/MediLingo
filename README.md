@@ -55,7 +55,7 @@ Coming together as a a strong team of 4, we bring different and unique skillsets
 - [Rachel Lim](https://github.com/rappleit): SUTD Computer Science and Design
 - [Tan Jing Kai](https://github.com/jingkai27): SUTD Computer Science and Design
 - [Tan Hun Chong](https://github.com/hunchongtan): SUTD Design and Artificial Intelligence
-- [Yeo Jia Ying](): NTU LKC School of Medicine
+- [Yeo Jia Ying](https://www.linkedin.com/in/jia-ying-yeo-a71779289/): NTU LKC School of Medicine
   
 <img width="1440" alt="Screenshot 2024-02-06 at 5 54 51 PM" src="https://github.com/rappleit/MediLingo/assets/103237805/3fb24f00-1deb-4588-a16f-dfb13b376f28">
 
