@@ -36,7 +36,7 @@ An accessible, cost-effective, and smart digital solution, MediLingo aims to emp
 ![React](https://img.shields.io/badge/react-%2320232a.svg?style=for-the-badge&logo=react&logoColor=%2361DAFB)
 
 #### AI APIs: ####
-![ChatGPT](https://img.shields.io/badge/chatGPT-74aa9c?style=for-the-badge&logo=openai&logoColor=white)
+![OpenAI](https://a11ybadges.com/badge?logo=openai)
 <div>
     <a href="https://www.edenai.co/">
     <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRlTfhI7k4FvDQWxDaDKKXu68jHMiMfvEdisGJR3FCYsQ&s" alt="EdenAI" title="EdenAI" width="80">
